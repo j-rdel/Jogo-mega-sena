@@ -1,0 +1,81 @@
+body{
+    background-color:#8fc0a9;
+}
+
+.colorcontainer{
+    background-color: white;
+    border: solid 1px lightgray;
+    border-radius: 20px;
+}
+
+.alinhamentodostextos{
+    text-align: center;
+}
+.alinhamentotextolongo{
+    margin-left: 18%;
+    width: 750px;
+    text-align: left;
+}
+/*Padding dos objetos da pagina*/
+.paddingelements{
+    padding: 10px;
+}
+
+.alinhamentobtn{
+    margin-left: 37%;
+}
+.background-color{
+
+    background-color: coral;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+/*alinhamento navbar*/
+.alinhamentonavbar{
+    margin-left: 45%;
+}
+/*alinhamento logo(container)*/
+.alinhamentologo{
+    width: 80px;
+    height: 80px;
+}
+.primeiracortabela{
+    background-color: green;
+}
+.segundacortabela{
+    background-color: white;
+}
+
+.ajusteimagempreços{
+    margin-left: 9%;
+    width: 900px;
+    padding: 10px;
+}
+
+.alignfooter{
+    margin-bottom: -30%;
+    height: 95px;
+    background-color: white;
+}
+
+#inputs{
+    margin-left: 18%;
+    width: 750px;
+    text-align: left;
+}
+
+#botao{
+    margin-left: 18%;
+    width: 750px;
+    text-align: left;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}

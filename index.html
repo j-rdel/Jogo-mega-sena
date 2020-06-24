@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="shortcut icon" href="img/favicon.ico" />
+  <title>Mega Sena!</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand alinhamentonavbar">
+      <img src="img/logo.png" width="30" height="30" class="d-inline-block align-top" loading="lazy" />
+      Mega Sena!
+    </a>
+  </nav>
+  <br />
+  <div class="container colorcontainer">
+    <h1 class="alinhamentodostextos paddingelements">
+      <img src="img/logo.png" class="alinhamentologo" /> Mega Sena
+    </h1>
+    <p class="alinhamentotextolongo">
+      Para jogar nosso jogo você deve digitar o valor apostado e a quantidade
+      de numeros que você quer
+    </p>
+    <p class="alinhamentotextolongo">
+      Valor do premio:
+      <label><input type="number" placeholder="ex: R$ 2000.00" id="valorpremio" /></label>
+      <input type="button" value="Adicionar valor do premio" id="btAddValorPremio">
+    </p>
+    <p class="alinhamentotextolongo">
+      Você pode apostar entre 6 e 15 números de 1 a 60. <br>
+      Você deseja:
+    <form class="alinhamentotextolongo">
+      <input type="radio" id="gerar_input" name="gerar" value="aleatorio" onclick="habilitarCampo()">
+      <label>Digitar quantidade de numeros para aposta</label><br>
+      <label><input disabled type="number" placeholder="ex: 6 a 15" id="quant_apostas" /></label><br>
+      <input type="radio" id="gerar_aleatorio" name="gerar" value="aleatorio" onclick="desabilitarCampo()">
+      <label>Gerar 6 números aleatórios para aposta</label><br>
+      <input type="button" value="Enviar" id="btEnviar">
+    </form>
+  </p>
+    <div id="inputs"></div>
+    <p class="alinhamentotextolongo" id="outNumeros"></p>
+    <div id="botao"></div>
+    <p class="alinhamentotextolongo" id="outSorteados"></p>
+    <br/>
+  </div>
+  <br />
+  <div class="container colorcontainer">
+    <h5 class="alinhamentodostextos">Tabela de preço das apostas:</h5>
+    <img src="img/tabela.PNG" class="ajusteimagempreços" alt="" />
+  </div>
+  <br />
+  <footer>
+    <div class="alignfooter alinhamentodostextos">
+      <br>
+      <p class="lead" style="padding-top: 10px;">@Copyright 2020</p>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
